@@ -88,6 +88,12 @@ int  main(void)
 	ts->hosting("lisi", "TTL");
 	ts->hosting("wangwu", "TTW");
 
+
 	ts->display();
+
+
 	return 0;
 }
+
+
+//add Test Message for design pattern
