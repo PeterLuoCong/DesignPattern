@@ -94,6 +94,4 @@ int  main(void)
 
 	return 0;
 }
-
-
-//add Test Message for design pattern
+//No Problem.
