@@ -95,3 +95,7 @@ int  main(void)
 	return 0;
 }
 //No Problem.
+//OK
+//GOOD
+//Great
+//Awesome
