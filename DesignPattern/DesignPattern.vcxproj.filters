@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\DesignPattern1">
+      <UniqueIdentifier>{cbf69d89-9089-43e7-b666-c1e31325a8b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DesignPattern2">
+      <UniqueIdentifier>{0b58fadf-1cdf-46bf-a59b-8ac2bad77139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DesignPattern3">
+      <UniqueIdentifier>{7bd1af8f-06f6-44d1-82ae-30156d05fb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DesignPattern3\State">
+      <UniqueIdentifier>{2cf2a29e-80c9-460f-a9c3-a2d05f30f090}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractFactory.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtoType.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy1.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy2.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.cpp">
+      <Filter>源文件\DesignPattern1</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyWeight.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator .cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="Memento.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainofResponsibility.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>源文件\DesignPattern2</Filter>
+    </ClCompile>
+    <ClCompile Include="CanRaffleState.cpp">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DispenseOutState.cpp">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DispenseState.cpp">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClCompile>
+    <ClCompile Include="NoRaffleState.cpp">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>源文件\DesignPattern3</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>源文件\DesignPattern3</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterator.cpp">
+      <Filter>源文件\DesignPattern3</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpreter.cpp">
+      <Filter>源文件\DesignPattern3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="State.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
+    <ClInclude Include="CanRaffleState.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DispenseOutState.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DispenseState.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
+    <ClInclude Include="NoRaffleState.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
+    <ClInclude Include="RaffleActivity.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
