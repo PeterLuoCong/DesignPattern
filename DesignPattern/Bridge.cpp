@@ -54,7 +54,7 @@ public:
 	{
 		cout << "~XiaoMi()" << endl;
 	}
-	virtual void appRun(App* app)
+	virtual void appRun(App* app)//将APP与手机桥接起来
 	{
 		cout << "XiaoMi: ";
 		app->run();
@@ -74,7 +74,7 @@ public:
 		app->run();
 	}
 };
-int  main11213(void)
+int  main_Bridge(void)
 {
 	App* gameApp = new GameApp();
 	App* translateApp = new TranslateApp();

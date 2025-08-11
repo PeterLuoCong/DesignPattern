@@ -75,7 +75,7 @@ public:
 private:
 	map<string, shared_ptr<Consumer>> m_consumerMap;
 };
-int  main(void)
+int  main_FlyWeight(void)
 {
 	Trusteeship* ts = new Trusteeship;
 	ts->hosting("zhangsan", "computer");
