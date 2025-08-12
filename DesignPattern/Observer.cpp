@@ -41,11 +41,11 @@ public:
 
 	virtual void addView(View* pView)override
 	{
-		unique_ptr<View> temp(pView);
+		shared_ptr<View> temp(pView);
 		auto iter = find(m_pViewList.begin(), m_pViewList.end(), temp);
 		if (iter == m_pViewList.end())
 		{
-			m_pViewList.emplace_back(temp);
+			m_pViewList.push_front(temp);
 		}
 		else
 		{
@@ -75,7 +75,7 @@ public:
 	}
 
 private:
-	list<unique_ptr<View>> m_pViewList;
+	list<shared_ptr<View>> m_pViewList;
 };
 
 class TableView : public View
