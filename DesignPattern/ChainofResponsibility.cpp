@@ -39,7 +39,7 @@ public:
 	{
 		if (level < Level_Two)
 		{
-			cout << "Monitor handle request : " << level << endl;
+			cout << "Monitor handle request : " << level + 1<< endl;
 		}
 		else
 		{
@@ -59,7 +59,7 @@ public:
 	{
 		if (level < Level_Three)
 		{
-			cout << "Captain handle request : " << level << endl;
+			cout << "Captain handle request : " << level  + 1<< endl;
 		}
 		else
 		{
@@ -77,15 +77,17 @@ public:
 	}
 	void handleRequest(RepuestLevel level)
 	{
-		cout << "General handle request : " << level << endl;
+		cout << "General handle request : " << level + 1 << endl;
 	}
 };
-int  main5563421(void)
+int  main_ChainofResponsibility(void)
 {
 	General* general = new General(nullptr);
 	Captain* captain = new Captain(general);
 	Monitor* monitor = new Monitor(captain);
 	monitor->handleRequest(Level_Three);
+	monitor->handleRequest(Level_Two);
+	monitor->handleRequest(Level_One);
 
 	delete general;
 	general = nullptr;

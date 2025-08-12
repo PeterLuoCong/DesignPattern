@@ -110,10 +110,12 @@ public:
 		}
 	}
 private:
-	Businessman* m_Buyer;
 	Businessman* m_Seller;
+	Businessman* m_Buyer;
 };
-int  main554311(void)
+
+
+int  main_Mediator(void)
 {
 	HouseMediator* mediator = new HouseMediator();
 	Buyer* buyer = new Buyer(mediator);

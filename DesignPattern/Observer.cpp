@@ -41,11 +41,11 @@ public:
 
 	virtual void addView(View* pView)override
 	{
-		shared_ptr<View> temp(pView);
+		unique_ptr<View> temp(pView);
 		auto iter = find(m_pViewList.begin(), m_pViewList.end(), temp);
 		if (iter == m_pViewList.end())
 		{
-			m_pViewList.push_front(temp);
+			m_pViewList.emplace_back(temp);
 		}
 		else
 		{
@@ -70,12 +70,12 @@ public:
 		auto iter = m_pViewList.begin();
 		for (; iter != m_pViewList.end(); iter++)
 		{
-			(*iter).get()->update();
+			(iter->get())->update();
 		}
 	}
 
 private:
-	list<shared_ptr<View>> m_pViewList;
+	list<unique_ptr<View>> m_pViewList;
 };
 
 class TableView : public View
@@ -110,7 +110,7 @@ public:
 private:
 	string m_name;
 };
-int  main__werwdfg(void)
+int  main(void)
 {
 	View* v1 = new TableView("TableView1");
 	View* v2 = new TableView("TableView2");
@@ -129,9 +129,5 @@ int  main__werwdfg(void)
 
 	delete model;
 	model = nullptr;
-
-	v1 = nullptr;
-	delete v1;
-	v1 = nullptr;
 	return 0;
 }
