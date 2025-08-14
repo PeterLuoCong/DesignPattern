@@ -23,7 +23,7 @@
       <UniqueIdentifier>{7bd1af8f-06f6-44d1-82ae-30156d05fb09}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\DesignPattern3\State">
-      <UniqueIdentifier>{2cf2a29e-80c9-460f-a9c3-a2d05f30f090}</UniqueIdentifier>
+      <UniqueIdentifier>{ab745583-1183-4f44-a7b9-d5b9f6ebe77e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,21 +84,6 @@
     <ClCompile Include="Observer.cpp">
       <Filter>源文件\DesignPattern2</Filter>
     </ClCompile>
-    <ClCompile Include="CanRaffleState.cpp">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClCompile>
-    <ClCompile Include="DispenseOutState.cpp">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClCompile>
-    <ClCompile Include="DispenseState.cpp">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClCompile>
-    <ClCompile Include="NoRaffleState.cpp">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClCompile>
     <ClCompile Include="Command.cpp">
       <Filter>源文件\DesignPattern3</Filter>
     </ClCompile>
@@ -111,24 +96,21 @@
     <ClCompile Include="Interpreter.cpp">
       <Filter>源文件\DesignPattern3</Filter>
     </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Context.h">
+      <Filter>源文件\DesignPattern3\State</Filter>
+    </ClInclude>
     <ClInclude Include="State.h">
       <Filter>源文件\DesignPattern3\State</Filter>
     </ClInclude>
-    <ClInclude Include="CanRaffleState.h">
+    <ClInclude Include="StartState.h">
       <Filter>源文件\DesignPattern3\State</Filter>
     </ClInclude>
-    <ClInclude Include="DispenseOutState.h">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClInclude>
-    <ClInclude Include="DispenseState.h">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClInclude>
-    <ClInclude Include="NoRaffleState.h">
-      <Filter>源文件\DesignPattern3\State</Filter>
-    </ClInclude>
-    <ClInclude Include="RaffleActivity.h">
+    <ClInclude Include="StopStart.h">
       <Filter>源文件\DesignPattern3\State</Filter>
     </ClInclude>
   </ItemGroup>

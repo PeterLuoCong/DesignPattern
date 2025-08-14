@@ -67,7 +67,7 @@ public:
     }
 };
 
-int main45654(int argc, char** argv)
+int main_Interpreter(int argc, char** argv)
 {
     Context* pcxt = new Context(10);
     Expression* e1 = new PlusExpression();

@@ -115,8 +115,8 @@ int main_Iterator()
     if (NULL != pName)
     {
         pName->Push("hello");
-        pName->Push("word");
-        pName->Push("cxue");
+        pName->Push("world");
+        pName->Push("ShenZhen");
     }
     Iterator* iter = NULL;
     iter = pName->CreateIterator();

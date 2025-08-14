@@ -127,38 +127,32 @@
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
-    <ClCompile Include="CanRaffleState.cpp" />
     <ClCompile Include="ChainofResponsibility.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Composite.cpp" />
     <ClCompile Include="Decorator .cpp" />
-    <ClCompile Include="DispenseState.cpp" />
     <ClCompile Include="Facade.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="FlyWeight.cpp" />
     <ClCompile Include="Interpreter.cpp" />
     <ClCompile Include="Iterator.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Memento.cpp" />
-    <ClCompile Include="NoRaffleState.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="ProtoType.cpp" />
     <ClCompile Include="Proxy.cpp" />
-    <ClCompile Include="DispenseOutState.cpp" />
     <ClCompile Include="Singleton.cpp" />
+    <ClCompile Include="State.cpp" />
     <ClCompile Include="Strategy1.cpp" />
     <ClCompile Include="Strategy2.cpp" />
     <ClCompile Include="Template.cpp" />
     <ClCompile Include="Visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CanRaffleState.h" />
-    <ClInclude Include="DispenseOutState.h" />
-    <ClInclude Include="DispenseState.h" />
-    <ClInclude Include="NoRaffleState.h" />
-    <ClInclude Include="RaffleActivity.h" />
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="StartState.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="StopStart.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
