@@ -28,6 +28,7 @@ public:
 		cout << "sheep(const sheep& obj) id address:" << &m_id << endl;
 		cout << "sheep(const sheep& obj) name address:" << &m_name << endl;
 	}
+
 	Clone* clone()override
 	{
 		return new Sheep(*this);
@@ -46,7 +47,7 @@ private:
 	string m_name;
 };
 
-int main_Prototype(void)
+int main(void)
 {
 	Clone* s1 = new Sheep(1, "abs");
 	//s1->show();
@@ -54,7 +55,7 @@ int main_Prototype(void)
 	cout << s1 << endl << s2 << endl;
 	//s2->show();
 
-	s2->show();
+	//s2->show();
 	Sheep* s3 = dynamic_cast<Sheep*>(s2);
 	s3->setid(9);
 	s2->show();
