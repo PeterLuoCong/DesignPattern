@@ -88,7 +88,7 @@ private:
 	Peripheral m_peripheral;
 };
 
-int  main_ComputerPlayingGame(void)
+int  main_ComputerPlayingGame1(void)
 {
 	Computer computer;
 	computer.start();

@@ -74,7 +74,7 @@ public:
 		app->run();
 	}
 };
-int  main_Bridge(void)
+int  main_Bridge1(void)
 {
 	App* gameApp = new GameApp();
 	App* translateApp = new TranslateApp();

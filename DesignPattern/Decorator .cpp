@@ -95,7 +95,7 @@ private:
 		cout << "Install EPB" << endl;
 	}
 };
-int  main_DecoratorCar(void)
+int  main_Decorator(void)
 {
 	Car* car = new Car;
 	DecoratorLED* ledCar = new DecoratorLED(car);

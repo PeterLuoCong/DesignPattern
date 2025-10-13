@@ -89,7 +89,7 @@ protected:
 	}
 };
 
-int  main_Computer(void)
+int  main_Computer1(void)
 {
 	
 	Computer1* p1 = new ComputerA();

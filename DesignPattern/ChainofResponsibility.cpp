@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace  std;
 
-enum RepuestLevel
+enum RequestLevel
 {
 	Level_One = 0,
 	Level_Two,
@@ -21,7 +21,7 @@ public:
 	{
 
 	}
-	virtual void handleRequest(RepuestLevel level) = 0;
+	virtual void handleRequest(RequestLevel level) = 0;
 
 
 protected:
@@ -35,7 +35,7 @@ public:
 	{
 
 	}
-	void handleRequest(RepuestLevel level)
+	void handleRequest(RequestLevel level)
 	{
 		if (level < Level_Two)
 		{
@@ -55,7 +55,7 @@ public:
 	{
 
 	}
-	void handleRequest(RepuestLevel level)
+	void handleRequest(RequestLevel level)
 	{
 		if (level < Level_Three)
 		{
@@ -75,19 +75,19 @@ public:
 	{
 
 	}
-	void handleRequest(RepuestLevel level)
+	void handleRequest(RequestLevel level)
 	{
 		cout << "General handle request : " << level + 1 << endl;
 	}
 };
-int  main_ChainofResponsibility(void)
+int  main(void)
 {
 	General* general = new General(nullptr);
 	Captain* captain = new Captain(general);
 	Monitor* monitor = new Monitor(captain);
+	/*monitor->handleRequest(Level_Three);
+	monitor->handleRequest(Level_Two);*/
 	monitor->handleRequest(Level_Three);
-	monitor->handleRequest(Level_Two);
-	monitor->handleRequest(Level_One);
 
 	delete general;
 	general = nullptr;

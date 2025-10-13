@@ -116,22 +116,9 @@ private:
 	OrderBuilder* m_pOrderBuilder;
 };
 
-int  main_Builder(void)
+int  main_OrderBuilder(void)
 {
-	/*MeatOrderBuilder* m_OrderBuilder = new MeatOrderBuilder();
-	Director* director = new Director(m_OrderBuilder);
-	director->Construct();
-	Order* order = m_OrderBuilder->getOrder();
-	order->food();
-	order->drink();
-
-	delete m_OrderBuilder;
-	m_OrderBuilder = nullptr;
-
-	delete director;
-	director = nullptr;*/
-
-	VagetarionOrderBuilder* m_OrderBuilder = new VagetarionOrderBuilder();
+	MeatOrderBuilder* m_OrderBuilder = new MeatOrderBuilder();
 	Director* director = new Director(m_OrderBuilder);
 	director->Construct();
 	Order* order = m_OrderBuilder->getOrder();
@@ -144,12 +131,25 @@ int  main_Builder(void)
 	delete director;
 	director = nullptr;
 
-	/*int* p = new int;
-	delete p;
-	p = nullptr;
-	delete p;
-	p = nullptr;
-	delete p;
-	p = nullptr;*/
+	//VagetarionOrderBuilder* m_OrderBuilder = new VagetarionOrderBuilder();
+	//Director* director = new Director(m_OrderBuilder);
+	//director->Construct();
+	//Order* order = m_OrderBuilder->getOrder();
+	//order->food();
+	//order->drink();
+
+	//delete m_OrderBuilder;
+	//m_OrderBuilder = nullptr;
+
+	//delete director;
+	//director = nullptr;
+
+	//int* p = new int;
+	//delete p;
+	//p = nullptr;
+	//delete p;
+	//p = nullptr;
+	//delete p;
+	//p = nullptr;
 	return 0;
 }

@@ -3,6 +3,7 @@
 * 以下代码实例中，以游戏角色不同的攻击方式为不同的策略，游戏角色即为执行不同策略的环境角色。
 */
 #include <iostream>​
+#include<vector>
 using namespace std;
 //抽象策略类，提供一个接口
 class Hurt
@@ -16,7 +17,7 @@ class AdcHurt : public Hurt
 public:
     void blood() override
     {
-        cout << "Adc hurt, Blood loss" << endl;
+       cout << "Adc hurt, Blood loss" << endl;
     }
 };
 //具体的策略实现类，具体实现接口， Apc技能攻击
@@ -100,17 +101,17 @@ private:
 
 int main_Strategy1()
 {
-    /*Archer<ApcHurt>* arc = new Archer<ApcHurt>;
-    arc->attack();
+	Archer<ApcHurt>* arc = new Archer<ApcHurt>;
+	arc->attack();
 
-    Archer<AdcHurt>* arc1 = new Archer<AdcHurt>;
-    arc1->attack();
-    
-    delete arc1;
-    arc1 = nullptr;
+	Archer<AdcHurt>* arc1 = new Archer<AdcHurt>;
+	arc1->attack();
 
-    delete arc;
-    arc = nullptr;*/
+	delete arc1;
+	arc1 = nullptr;
+
+	delete arc;
+	arc = nullptr;
 
     Soldier s(new AdcHurt);
     s.attack();
@@ -118,11 +119,17 @@ int main_Strategy1()
     Soldier s1 = new ApcHurt();
     s1.attack();
 
-    /*Mage m(Hurt_Type_Adc);
-    m.attack();
-    Mage m1(Hurt_Type_Apc);
-    m1.attack();*/
+	Mage m(Hurt_Type_Adc);
+	m.attack();
+	Mage m1(Hurt_Type_Apc);
+	m1.attack();
 
 
+    vector<int>* Vec = new vector<int>;
+	Vec->push_back(1);
+    for(auto v : *Vec)
+    {
+        cout << v << endl;
+	}
     return 0;
 }

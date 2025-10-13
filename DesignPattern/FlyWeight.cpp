@@ -51,7 +51,7 @@ public:
 	{
 		if (m_consumerMap.count(user))
 		{
-			cout << "A costumer named " << user << " alreay exist" << endl;
+			cout << "A costumer named " << user << " already exist" << endl;
 			Consumer* consumer = m_consumerMap.at(user).get();
 			consumer->setArticle(article);
 		}
@@ -75,7 +75,7 @@ public:
 private:
 	map<string, shared_ptr<Consumer>> m_consumerMap;
 };
-int  main_FlyWeight(void)
+int  main_FlyWeight1(void)
 {
 	Trusteeship* ts = new Trusteeship;
 	ts->hosting("zhangsan", "computer");

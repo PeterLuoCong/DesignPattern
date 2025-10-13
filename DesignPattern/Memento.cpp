@@ -82,7 +82,7 @@ public:
 private:
 	Memento m_mem;
 };
-int  main_Memento(void)
+int  main_Memento1(void)
 {
 	GameValue v1 = { 0, "Ak", "3K" };
 	Game game(v1);    //≥ı º÷µ

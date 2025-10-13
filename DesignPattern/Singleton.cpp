@@ -130,22 +130,22 @@ Singleton4* Singleton4::getInstance()
 }
 
 
-int main_Singleton()
+int main_Single()
 {
-   /* Singleton* instance = Singleton::getInstance();
-    Singleton* instance2 = instance->getInstance();
-    cout << reinterpret_cast<void*>(instance) << endl;
-    cout << reinterpret_cast<void*>(instance2) << endl;*/
+    //Singleton* instance = Singleton::getInstance();
+    //Singleton* instance2 = instance->getInstance();
+    //cout << reinterpret_cast<void*>(instance) << endl;
+    //cout << reinterpret_cast<void*>(instance2) << endl;
 
-    Singleton1& instance = Singleton1::getInstance();
-    Singleton1& instance2 = Singleton1::getInstance();
-    cout << reinterpret_cast<void*>(&instance) << endl;
-    cout << reinterpret_cast<void*>(&instance2) << endl;
+    //Singleton1& instance = Singleton1::getInstance();
+    //Singleton1& instance2 = Singleton1::getInstance();
+    //cout << reinterpret_cast<void*>(&instance) << endl;
+    //cout << reinterpret_cast<void*>(&instance2) << endl;
 
-  /*  Singleton3* instance = Singleton3::getInstance();
+    Singleton3* instance = Singleton3::getInstance();
     Singleton3* instance1 = instance->getInstance();
     cout << reinterpret_cast<void*>(instance) << endl;
-    cout << reinterpret_cast<void*>(instance1) << endl;*/
+    cout << reinterpret_cast<void*>(instance1) << endl;
 
 
     //Singleton4* instance = Singleton4::getInstance();

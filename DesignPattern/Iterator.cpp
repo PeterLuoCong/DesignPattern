@@ -102,13 +102,17 @@ public:
         }
         return strRet;
     }
+    Iterator* Get()
+    {
+        return m_pIterator;
+    }
 private:
     vector<string> m_vecItems;
     Iterator* m_pIterator;
 
 
 };
-int main_Iterator()
+int main_Iterator1()
 {
     ConcreteAggregate* pName = NULL;
     pName = new ConcreteAggregate();

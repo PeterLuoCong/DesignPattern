@@ -14,7 +14,7 @@ public:
 	{
 		m_pMediator = m;
 	}
-	virtual ~Businessman()
+	 ~Businessman()
 	{
 
 	}
@@ -102,10 +102,12 @@ public:
 	{
 		if (man == m_Buyer)
 		{
+			cout << "m_Buyer send message to m_Seller:" << message.data() << endl;
 			m_Seller->getMessage(message);
 		}
 		else
 		{
+			cout << "m_Seller send message to m_Buyer:" << message.data() << endl;
 			m_Buyer->getMessage(message);
 		}
 	}

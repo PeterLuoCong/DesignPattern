@@ -98,7 +98,7 @@ private:
 	list<Person*> persons;
 };
 
-int main_Visitor(int argc, char* argv[])
+int main_Visitor1(int argc, char* argv[])
 {
 	//创建ObjectStructure（可以创建很多个不同的ObjectStructure来代表不同评价，然后把同样评价的人放到一个ObjectStructure中）
 	ObjectStructure* objectStructure = new ObjectStructure;

@@ -111,7 +111,26 @@ public:
 	{
 		pop_front();
 	}
+
+	[[nodiscard]] int GetNum(int num)
+	{
+		return num * num;
+	}
 };
+
+
+template <int N> struct Factorial {
+	static const int value = N * Factorial<N - 1>::value;
+};
+
+
+template <>
+struct Factorial<0>{
+	static const int value = 1;
+};
+// C++11 ºó£ºconstexpr º¯Êý¸ü¼ò½à
+constexpr int fact = Factorial<5>::value;
+
 int  main_Adapter(void)
 {
 	/*Stack s;
@@ -128,5 +147,8 @@ int  main_Adapter(void)
 	Queue1 q;
 	q.push(9);
 	q.pop();
+
+	cout << fact << endl;
+
 	return 0;
 }
