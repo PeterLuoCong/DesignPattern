@@ -56,7 +56,7 @@ public:
 	}
 	~Computer()
 	{
-
+		cout << "Computer destructor called" << endl;
 	}
 	virtual void playingMasterGame()
 	{
@@ -88,7 +88,7 @@ private:
 	Peripheral m_peripheral;
 };
 
-int  main_ComputerPlayingGame1(void)
+int  main(void)
 {
 	Computer computer;
 	computer.start();
@@ -97,5 +97,8 @@ int  main_ComputerPlayingGame1(void)
 	computer.playingAirplaneBattleGame();
 
 	computer.shutdown();
+
+
+	computer.~Computer();
 	return 0;
 }

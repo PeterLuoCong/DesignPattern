@@ -147,8 +147,8 @@ int  main_Adapter(void)
 	Queue1 q;
 	q.push(9);
 	q.pop();
-
+	int num = q.GetNum(7);
 	cout << fact << endl;
-
+	
 	return 0;
 }

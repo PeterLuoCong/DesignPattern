@@ -105,7 +105,7 @@ public:
 	}
 };
 
-int  main_Factory1(void)
+int  main_Factory1_(void)
 {
 	Tank56Factory* factory56 = new Tank56Factory();
 	Tank* Tank56 = factory56->CreateTank();

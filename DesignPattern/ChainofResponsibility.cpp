@@ -80,7 +80,7 @@ public:
 		cout << "General handle request : " << level + 1 << endl;
 	}
 };
-int  main(void)
+int  main_ChainResponsibility(void)
 {
 	General* general = new General(nullptr);
 	Captain* captain = new Captain(general);

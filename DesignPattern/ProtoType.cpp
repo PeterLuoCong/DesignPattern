@@ -47,7 +47,7 @@ private:
 	string m_name;
 };
 
-int main_Clone1(void)
+int main_Clone(void)
 {
 	Clone* s1 = new Sheep(1, "abs");
 	//s1->show();

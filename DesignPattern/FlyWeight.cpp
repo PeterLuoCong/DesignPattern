@@ -57,7 +57,7 @@ public:
 		}
 		else
 		{
-			shared_ptr<Consumer> consumer(new Consumer(user));
+			shared_ptr<Consumer> consumer(make_shared<Consumer>(user));
 			consumer.get()->setArticle(article);
 			m_consumerMap.insert(pair<string, shared_ptr<Consumer>>(user, consumer));
 		}
@@ -65,7 +65,7 @@ public:
 
 	void display()
 	{
-		map<string, shared_ptr<Consumer>>::iterator iter = m_consumerMap.begin();
+		auto iter = m_consumerMap.begin();
 		for (; iter != m_consumerMap.end(); iter++)
 		{
 			cout << iter->first.data() << " : " << iter->second.get()->article().data() << endl;
@@ -75,7 +75,7 @@ public:
 private:
 	map<string, shared_ptr<Consumer>> m_consumerMap;
 };
-int  main_FlyWeight1(void)
+int  main_FlyWeight(void)
 {
 	Trusteeship* ts = new Trusteeship;
 	ts->hosting("zhangsan", "computer");
