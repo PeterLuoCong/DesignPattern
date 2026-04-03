@@ -112,7 +112,7 @@ private:
 
 
 };
-int main_Iterator1()
+int main_Iterator()
 {
     ConcreteAggregate* pName = NULL;
     pName = new ConcreteAggregate();

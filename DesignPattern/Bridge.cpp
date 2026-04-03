@@ -1,6 +1,8 @@
 #include<iostream>
 using  namespace  std;
 
+//抽象不应依赖于具体的实现类，抽象和实现应该分离
+//抽象不应依赖细节，细节应该依赖于抽象
 class App
 {
 public:
@@ -74,7 +76,7 @@ public:
 		app->run();
 	}
 };
-int  main_Bridge1(void)
+int  main_Bridge(void)
 {
 	App* gameApp = new GameApp();
 	App* translateApp = new TranslateApp();

@@ -117,7 +117,7 @@ private:
 };
 
 
-int  main_Mediator(void)
+int  main_Mediator_(void)
 {
 	HouseMediator* mediator = new HouseMediator();
 	Buyer* buyer = new Buyer(mediator);

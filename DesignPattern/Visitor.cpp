@@ -98,11 +98,12 @@ private:
 	list<Person*> persons;
 };
 
-int main_Visitor1(int argc, char* argv[])
+int main_Visitor(int argc, char* argv[])
 {
 	//创建ObjectStructure（可以创建很多个不同的ObjectStructure来代表不同评价，然后把同样评价的人放到一个ObjectStructure中）
 	ObjectStructure* objectStructure = new ObjectStructure;
-	objectStructure->attach(new Man);
+	Man* pMan = new Man();
+	objectStructure->attach(pMan);
 	objectStructure->attach(new Woman);
 
 	//假如歌手获得成功
@@ -111,6 +112,7 @@ int main_Visitor1(int argc, char* argv[])
 	cout << "=======================" << endl;
 	//假如歌手失败了
 	Fail* fail = new Fail;
+	objectStructure->detach(pMan);//移除第一个人
 	objectStructure->display(fail);
 	return 0;
 }

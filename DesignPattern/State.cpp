@@ -4,7 +4,7 @@
 #include "Context.h"
 using  namespace  std;
 
-int  main_State(void)
+int  main_State1(void)
 {
 	Context* context = new Context();
 

@@ -1,12 +1,12 @@
 #include<iostream>
 using  namespace  std;
 
-typedef enum
+typedef enum Tank_Type
 {
 	Tank_Type_56,
 	Tank_Type_96,
 	Tank_Type_Num
-}Tank_Type;
+};
 
 class Tank
 {
@@ -48,38 +48,38 @@ private:
 	string m_strType;
 };
 
-//class Tank_Factory
-//{
-//public:
-//	Tank* CreateTank(Tank_Type type)
-//	{
-//		switch (type)
-//		{
-//		case Tank_Type_56:
-//			return new Tank_56();
-//		case Tank_Type_96:
-//			return new Tank_96();
-//		default: return nullptr;
-//		}
-//	}
-//};
-//int  main(void)
-//{
-//	Tank_Factory* factory = new Tank_Factory();
-//	Tank * tank56 = factory->CreateTank(Tank_Type_56);
-//	tank56->type();
-//
-//	Tank* tank96 = factory->CreateTank(Tank_Type_96);
-//	tank96->type();
-//
-//	delete factory;
-//	factory = nullptr;
-//	delete tank56;
-//	tank56 = nullptr;
-//	delete tank96;
-//	tank96 = nullptr;
-//	return 0;
-//}
+class Tank_Factory_Tmp
+{
+public:
+	Tank* CreateTank(Tank_Type type)
+	{
+		switch (type)
+		{
+		case Tank_Type_56:
+			return new Tank_56();
+		case Tank_Type_96:
+			return new Tank_96();
+		default: return nullptr;
+		}
+	}
+};
+int  main_Simple(void)
+{
+	Tank_Factory_Tmp* factory = new Tank_Factory_Tmp();
+	Tank * tank56 = factory->CreateTank(Tank_Type_56);
+	tank56->type();
+
+	Tank* tank96 = factory->CreateTank(Tank_Type_96);
+	tank96->type();
+
+	delete factory;
+	factory = nullptr;
+	delete tank56;
+	tank56 = nullptr;
+	delete tank96;
+	tank96 = nullptr;
+	return 0;
+}
 
 class TankFactory
 {
@@ -105,7 +105,7 @@ public:
 	}
 };
 
-int  main_Factory1_(void)
+int  main_Factory(void)
 {
 	Tank56Factory* factory56 = new Tank56Factory();
 	Tank* Tank56 = factory56->CreateTank();

@@ -172,7 +172,7 @@ public:
 		cout << m_name.data() << endl;
 	}
 };
-int  main_Composite1(void)
+int  main_Composite(void)
 {
 	HeadCompany* headRoot = new HeadCompany("Head Root Company");
 

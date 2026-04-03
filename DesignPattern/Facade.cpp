@@ -85,10 +85,10 @@ public:
 private:
 	Host m_host;
 	LCDDisplay m_display;
-	Peripheral m_peripheral;
+	Peripheral m_peripheral;//外围设备
 };
 
-int  main(void)
+int  main_Facade(void)
 {
 	Computer computer;
 	computer.start();
@@ -99,6 +99,8 @@ int  main(void)
 	computer.shutdown();
 
 
+	/*computer.~Computer();
 	computer.~Computer();
+	computer.~Computer();*/
 	return 0;
 }

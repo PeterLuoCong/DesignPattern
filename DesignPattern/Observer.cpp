@@ -110,7 +110,7 @@ public:
 private:
 	string m_name;
 };
-int  main_Observer1(void)
+int  main_Observer(void)
 {
 	View* v1 = new TableView("TableView1");
 	View* v2 = new TableView("TableView2");

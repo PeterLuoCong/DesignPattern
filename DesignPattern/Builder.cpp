@@ -116,7 +116,7 @@ private:
 	OrderBuilder* m_pOrderBuilder;
 };
 
-int  main_OrderBuilder(void)
+int  main_OrderBuilder1(void)
 {
 	MeatOrderBuilder* m_OrderBuilder = new MeatOrderBuilder();
 	Director* director = new Director(m_OrderBuilder);

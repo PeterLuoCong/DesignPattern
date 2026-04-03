@@ -112,7 +112,7 @@ public:
 	}
 };
 
-int  mainAbsFactory_(void)
+int  main_AbsFactory(void)
 {
 	BlackFactory* blackfactory = new BlackFactory();
 	BlackCoat* blackcoat = dynamic_cast<BlackCoat*>(blackfactory->CreateCoat());

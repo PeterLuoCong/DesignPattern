@@ -130,7 +130,7 @@ Singleton4* Singleton4::getInstance()
 }
 
 
-int main_Single()
+int main_SingleTon()
 {
     //Singleton* instance = Singleton::getInstance();
     //Singleton* instance2 = instance->getInstance();

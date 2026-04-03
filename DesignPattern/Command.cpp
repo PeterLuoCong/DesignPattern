@@ -152,7 +152,7 @@ void test01()
 }
 
 
-int main_Command1()
+int main_Command()
 {
 	test01();
 	return 0;

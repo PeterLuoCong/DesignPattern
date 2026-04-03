@@ -105,7 +105,7 @@ public:
 	}
 
 };
-int  main_Proxy1(void)
+int  main_Proxy(void)
 {
 	Girl girl("Princess");
 	ManProxy* p_Proxy = new ManProxy(girl);

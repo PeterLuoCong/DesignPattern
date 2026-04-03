@@ -43,7 +43,8 @@ public:
 private:
 	Function m_fun;
 };
-int  main_Strategy(void)
+
+int  main_Strategy2(void)
 {
 	Soldier1 s(adcHurt);
 	Soldier1 s1(apcHurt);

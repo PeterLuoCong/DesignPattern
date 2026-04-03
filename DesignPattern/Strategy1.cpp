@@ -131,5 +131,6 @@ int main_Strategy1()
     {
         cout << v << endl;
 	}
+
     return 0;
 }

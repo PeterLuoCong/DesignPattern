@@ -95,7 +95,7 @@ private:
 		cout << "Install EPB" << endl;
 	}
 };
-int  main_Decorator(void)
+int  main_Decorator1(void)
 {
 	Car* car = new Car;
 	DecoratorLED* ledCar = new DecoratorLED(car);
@@ -103,8 +103,8 @@ int  main_Decorator(void)
 	DecoratorPC* pcCar2 = new DecoratorPC(pcCar1);
 	DecoratorPC* pcCar3 = new DecoratorPC(pcCar2);
 	DecoratorEPB* epbCar = new DecoratorEPB(pcCar3);
-
-	epbCar->configuration();
+	DecoratorEPB* epbCar1 = new DecoratorEPB(epbCar);
+	epbCar1->configuration();
 
 	delete epbCar;
 	epbCar = nullptr;

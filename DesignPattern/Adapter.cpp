@@ -128,7 +128,7 @@ template <>
 struct Factorial<0>{
 	static const int value = 1;
 };
-// C++11 ºó£ºconstexpr º¯Êý¸ü¼ò½à
+// C++11 ï¿½ï¿½constexpr ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 constexpr int fact = Factorial<5>::value;
 
 int  main_Adapter(void)
